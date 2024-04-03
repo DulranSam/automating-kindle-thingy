@@ -15,7 +15,7 @@ driver = webdriver.Chrome(service=service)
 driver.get("https://www.google.com/")
 
 # Find the search input element using its name attribute
-input_element = driver.find_element(By.NAME, "q")
+input_element = driver.find_element(By.CLASS_NAME, "gLFyf")
 
 # Input the search query
 input_element.send_keys("Veloxal", Keys.ENTER)
